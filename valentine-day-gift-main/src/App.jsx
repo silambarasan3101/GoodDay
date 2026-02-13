@@ -37,8 +37,8 @@ function App() {
   const [yesHoverCount, setYesHoverCount] = useState(0);
 
   const getYesButtonText = () => {
-    if (yesHoverCount === 0) return "YES";
-    if (yesHoverCount === 1) return "Please No 🥰";
+    if (yesHoverCount === 0) return "No";
+    if (yesHoverCount === 1) return "Please Yes 🥰";
     return "think again 😃";
   };
 
@@ -102,7 +102,7 @@ function App() {
 
       {noPressed ? (
         <div className="card success-container">
-          <h1 className="success-title">April Fool!!! 😂🤣</h1>
+          <h1 className="success-title">Love of My Life!!! </h1>
           <h3 className="subtext">Indha twist epadi iruku 🤣</h3>
           <video
             className="success-video"
@@ -118,11 +118,11 @@ function App() {
       ) : (
         <div className="card">
           <h1 className="title">
-            <span className="highlight">Shanmuga Priya,</span>
+            <span className="highlight">Ranjani,</span>
             Will you be my Valentine? 💖💞
           </h1>
 
-          <p className="subtext">Choose wisely. (The "Yes" button is... playing hard to get.)</p>
+          <p className="subtext">Choose wisely. (The "No" button is... playing hard to get.)</p>
 
           <div className="btn-group">
             <button
@@ -131,14 +131,14 @@ function App() {
               onMouseEnter={handleYesHover}
               onClick={handleYesHover}
             >
-              YES
+              NO
             </button>
 
             <button
               className="btn no-btn"
               onClick={handleNoClick}
             >
-              NO
+              Yes
             </button>
           </div>
         </div>
