@@ -1,4 +1,4 @@
-# 💝 Valentine's Day Proposal Prank App
+# 💝 Valentine's Day Proposal
 
 
 ## 🛠️ Built With
